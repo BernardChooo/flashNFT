@@ -1,0 +1,26 @@
+{
+  "name": "flashNFT",
+  "version": "1.0.0",
+  "description": "Use case Breed NFT.\r Using ETH as collateral.\r Flashloan for security of NFT tokens, to increase cost of hacking while enjoy the benefits of NFT.",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bernardchoo/flashNFT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bernardchoo/flashNFT/issues"
+  },
+  "homepage": "https://github.com/Bernardchoo/flashNFT#readme",
+  "dependencies": {
+    "openzeppelin-solidity": "^3.1.0"
+  }
+}
