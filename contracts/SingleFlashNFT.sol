@@ -39,6 +39,21 @@ interface ERC721Vipers {
     
     function breedVipers(uint256 matronId, uint256 sireId) external returns (uint256);
 }
+interface ERC721Cryptokitties {
+    struct Kitty { // https://github.com/cryptocopycats/awesome-cryptokitties/blob/master/contracts/KittyBase.sol
+        uint256 genes;
+        uint64 birthTime;
+        uint64 cooldownEndBlock;
+        uint32 matronId;
+        uint32 sireId;
+        uint32 siringWithId;
+        uint16 cooldownIndex;
+        uint16 generation;
+    }
+ function breedWithAuto(uint256 _matronId, uint256 _sireId) external payable;
+ function canBreedWith(uint256 _matronId, uint256 _sireId) external view returns(bool);
+
+}
 
 contract SingleFlashNFT is FlashLoanReceiverBase {
     address LeaseNFTAddress;
